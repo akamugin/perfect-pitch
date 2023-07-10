@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>perfect-pitch</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Perfect Pitch Website">
+	<link href="myPerfectPitch.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<h1>Perfect Pitch Test</h1>
+	<p>Welcome! You've arrived at the ultimate test to discover just how pitch-perfect your ears are. Have you ever been praised for your incredible musical sense or accused of being tone-deaf? Did you ever find yourself mesmerized by the floating notes that surrounded you as a child? No matter your experience, we're here to find out the true extent of your musical sensitivity! Get ready for an exciting journey into the world of perfect pitch!</p>
+	<hr>
+	<p>Before we embark on this musical adventure, we'd like to get to know you a little better. Please select the appropriate circle for each question below.</p>
+	<hr>
+	<h2>How long have you been playing an instrument(s)?</h2>
+	<input type="radio" id="radio1" name="instrumentYears" value="1-2 years">
+	<label for="radio1">1-2 years</label><br>
+
+	<input type="radio" id="radio2" name="instrumentYears" value="3-4 years">
+	<label for="radio2">3-4 years</label><br>
+
+	<input type="radio" id="radio3" name="instrumentYears" value="5-6 years">
+	<label for="radio3">5-6 years</label><br>
+
+	<input type="radio" id="radio4" name="instrumentYears" value="7-8 years">
+	<label for="radio4">7-8 years</label><br>
+
+	<input type="radio" id="radio5" name="instrumentYears" value="9-10+ years">
+	<label for="radio5">9-10+ years</label><br>
+
+	<hr>
+	<h2>Which instrument(s) can you play?</h2>
+	<input type="checkbox" id="checkbox1" name="instruments" value="Piano">
+	<label for="checkbox1">Piano</label><br>
+	<input type="checkbox" id="checkbox2" name="instruments" value="Guitar">
+	<label for="checkbox2">Guitar</label><br>
+	<input type="checkbox" id="checkbox3" name="instruments" value="Violin">
+	<label for="checkbox3">Violin</label><br>
+	<input type="checkbox" id="checkbox4" name="instruments" value="Flute">
+	<label for="checkbox4">Flute</label><br>
+	<input type="checkbox" id="checkbox5" name="instruments" value="Drums">
+	<label for="checkbox5">Drums</label><br>
+	<input type="checkbox" id="checkbox6" name="instruments" value="Others">
+	<label for="checkbox6">Others</label><br>
+	<hr>
+	<p>Alright! Thank you for sharing that information. Now, it's time to put your skills to the test! Click the button below to begin the exciting journey!</p>
+	<button type="button" id="nextButton">Start Test</button>
+	<script>
+		document.getElementById("nextButton").addEventListener("click", function() {
+			window.location.href = "perfect-pitch-next-page.html";
+		});
+	</script>
+</body>
+</html>
