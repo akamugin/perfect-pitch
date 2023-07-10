@@ -30,7 +30,7 @@ function shuffle(array) {
 
 function playNote() {
   var note = questions[currentQuestion].note;
-  var audio = new Audio(note + '.mp3');
+  var audio = new Audio('audio/' + note + '.mp3');
   audio.play();
 
   document.getElementById('submitButton').style.display = 'block';
